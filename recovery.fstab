@@ -5,8 +5,9 @@
 /cache            ext4     /dev/block/bootdevice/by-name/cache        flags=backup=1;wipeingui;wipeduringfactoryreset
 
 # System
-/system           ext4     /dev/block/bootdevice/by-name/system       flags=backup=1;wipeingui;display="System"
+#/system           ext4     /dev/block/bootdevice/by-name/system       flags=backup=1;wipeingui;display="System"
 /system_image     emmc     /dev/block/bootdevice/by-name/system       flags=backup=1;flashimg=1;display="System Image"
+/system_root      ext4     /dev/block/bootdevice/by-name/system       flags=backup=1;wipeingui;display="System"
 
 # Boot-Aboot-Recovery
 /boot             emmc     /dev/block/bootdevice/by-name/boot         flags=backup=1;flashimg=1;display="Boot"
