@@ -15,20 +15,19 @@
 #
 
 # Specify phone tech before including full_phone
-$(call inherit-product, vendor/pb/config/common.mk)
+$(call inherit-product, vendor/omni/config/common.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
 # Inherit some common Omni stuff.
-#$(call inherit-product, vendor/pb/config/common.mk)
+#$(call inherit-product, vendor/omni/config/common.mk)
 
 # Charger
 PRODUCT_PACKAGES += \
     charger_res_images \
     charger
 
-# Kernel+
+# Fstab+ Time zone
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/kernel:kernel \
 	$(LOCAL_PATH)/recovery.fstab:recovery.fstab \
 	system/timezone/output_data/iana/tzdata:recovery/root/system/usr/share/zoneinfo/tzdata
 
