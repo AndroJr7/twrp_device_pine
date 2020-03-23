@@ -3,14 +3,14 @@ Codename: pine
 
 
 ---------------------------------
-PitchBlack Recovery tree for pine 
+TWRP Recovery tree for pine 
 ---------------------------------
 
 *To build*-
 
 1) Sync Sources 
 
-``$ repo init -u git://github.com/PitchBlackRecoveryProject/manifest_pb.git -b android-9.0``
+``$ git://github.com/minimal-manifest-twrp/platform_manifest_twrp_omni.git -b twrp-9.0``
 
 ``$ repo sync``
 
@@ -19,7 +19,9 @@ PitchBlack Recovery tree for pine
 
 ``$ cd SOURCE_DIR``
 
-``$ git clone https://github.com/AndroJr7/twrp_device_pine.git device/Xiaomi/pine``
+``$ git clone https://github.com/AndroJr7/twrp_device_pine.git -b twrp-classic device/xiaomi/pine``
+
+``$ git clone https://github.com/AndroJr7/kernel_xiaomi_sdm439 -b twrp kernel/xiaomi/pine``
 
 ``$ . build/env*``
 
