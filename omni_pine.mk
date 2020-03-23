@@ -31,6 +31,9 @@ PRODUCT_COPY_FILES += \
 	$(LOCAL_PATH)/recovery.fstab:recovery.fstab \
 	system/timezone/output_data/iana/tzdata:recovery/root/system/usr/share/zoneinfo/tzdata
 
+# Missing dependencies
+ALLOW_MISSING_DEPENDENCIES := true
+
 # Device identifier. This must come after all inclusions
 PRODUCT_DEVICE	:= pine
 PRODUCT_NAME	:= omni_pine
