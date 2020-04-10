@@ -28,7 +28,6 @@ PRODUCT_PACKAGES += \
 
 # Kernel+
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/kernel:kernel \
 	$(LOCAL_PATH)/recovery.fstab:recovery.fstab \
 	system/timezone/output_data/iana/tzdata:recovery/root/system/usr/share/zoneinfo/tzdata
 
